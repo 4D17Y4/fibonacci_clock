@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+   <TextView
+       android:layout_gravity="center"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="It is a widget"
+       android:textSize="40dp"
+       android:textStyle="bold"
+       >
+   </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="How do i tell time with fibonacci clock?"
+        android:layout_margin="10dp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:text="
+The Fibonacci sequence is a sequence of numbers created by the Italian mathematician Fibonacci in the 13th century. This is a sequence starting with 1 and 1, where each subsequent number is the sum of the previous two. For the clock I used the first 5 terms: 1, 1, 2, 3 and 5.
+
+The screen of the clock is made up of five squares whose side lengths match the first five Fibonacci numbers: 1, 1, 2, 3 and 5. The hours are displayed using red and the minutes using blue. When a square is used to display both the hours and minutes it turns green. White squares are ignored.
+
+To tell time on the Fibonacci clock you need to do some math. To read the hour, simply add up the corresponding values of the red and blue squares. To read the minutes, do the same with the green and blue squares. The minutes are displayed in 5 minute increments (0 to 12) so you have to multiply your result by 5 to get the actual number.
+
+
+Often, there are multiple ways to display a single time. To add to the challenge, the combinations are picked randomly from all the different ways a number can be displayed. There are, for example, 16 different ways to display 6:30 and you never know which one the clock will use!
+
+"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="*It is updated every 3 minutes\n*U can update it by single click (if somehow its not that when you see it)\n*U can also click to see multiple possible combination to display same time"
+        android:layout_margin="10dp"></TextView>
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have a gud TIME\n            :D"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        ></TextView>
+
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>
